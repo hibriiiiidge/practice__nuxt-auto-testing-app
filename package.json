@@ -22,7 +22,7 @@
     "babel-preset-vue-app": "^2.0.0",
     "jest": "^25.1.0",
     "lodash.clonedeep": "^4.5.0",
-    "vue-jest": "^4.0.0-0"
+    "vue-jest": "^3.0.5"
   },
   "jest": {
     "transform": {
@@ -33,6 +33,8 @@
       "^@@/(.*)$": "<rootDir>/$1",
       "^~/(.*)$": "<rootDir>/app/$1",
       "^~~/(.*)$": "<rootDir>/$1"
-    }
+    },
+    "moduleFileExtentions": ["js", "json", "vue"],
+    "collectCoverageFrom": ["app/**/*.{js,vue}"]
   }
 }
